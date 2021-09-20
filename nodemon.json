@@ -1,0 +1,17 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "dist",
+    ".vscode",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "execMap": {
+    "ts": "node -r tsconfig-paths/register -r ts-node/register"
+  },
+  "watch": [
+    "src"
+  ],
+  "ext": "ts"
+}
