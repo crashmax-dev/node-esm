@@ -65,7 +65,8 @@
     // "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "declaration.d.ts"
   ],
   "ts-node": {
     "files": true
