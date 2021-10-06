@@ -5,7 +5,9 @@
     "start": "npm run build && node dist/index.js",
     "dev": "nodemon --inspect src/index.ts",
     "prebuild": "rimraf dist",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint --ext ts src",
+    "lint:fix": "eslint --fix --ext ts src"
   },
   "devDependencies": {
     "@types/node": "^16.9.4",
