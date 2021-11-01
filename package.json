@@ -1,26 +1,30 @@
 {
   "name": "typescript-template",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "dev": "nodemon --inspect src/index.ts",
-    "prebuild": "rimraf dist",
+    "start": "npm run build && node ./dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node -r tsconfig-paths/register --inspect ./dist/index.js\"",
     "build": "tsc",
+    "prebuild": "rimraf dist",
     "lint": "eslint --ext ts src",
     "lint:fix": "eslint --fix --ext ts src"
   },
   "devDependencies": {
+    "@sindresorhus/tsconfig": "^2.0.0",
     "@types/node": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.12",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.2.1",
+    "tsc-watch": "^4.5.0",
     "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.3"
   },
   "dependencies": {
     "dotenv": "^10.0.0"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   }
 }
