@@ -6,11 +6,11 @@
     "start": "npm run build && node ./dist/index.js",
     "dev": "tsc-watch --onSuccess \"node -r tsconfig-paths/register --inspect ./dist/index.js\"",
     "build": "tsc",
-    "prebuild": "rimraf dist",
     "lint": "eslint --ext ts src",
     "lint:fix": "eslint --fix --ext ts src",
+    "prebuild": "rimraf dist",
     "prepare": "husky install",
-    "postinstall": "husky install"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "^2.0.0",
