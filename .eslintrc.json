@@ -1,7 +1,11 @@
 {
   "extends": "@crashmax/eslint-config",
-  "env":{
+  "env": {
     "node": true,
     "browser": true
-  }
+  },
+  "ignorePatterns": [
+    "dist",
+    "tests"
+  ]
 }
