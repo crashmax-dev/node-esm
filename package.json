@@ -9,7 +9,7 @@
     "test": "ava",
     "lint": "eslint --ext ts src",
     "lint:fix": "eslint --fix --ext ts src",
-    "prebuild": "rimraf dist",
+    "prebuild": "del-cli dist",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
   },
@@ -19,8 +19,8 @@
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/node": "^16.11.6",
     "ava": "^3.15.0",
+    "del-cli": "^4.0.1",
     "husky": "^7.0.4",
-    "rimraf": "^3.0.2",
     "ts-node": "^10.4.0",
     "tsc-watch": "^4.5.0",
     "tsconfig-paths": "^3.11.0",
