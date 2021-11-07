@@ -10,6 +10,7 @@
     "!dist/**/*.js.map"
   ],
   "keywords": [],
+  "license": "MIT",
   "homepage": "https://github.com/crashmax-dev/ts-esm#readme",
   "bugs": {
     "url": "https://github.com/crashmax-dev/ts-esm/issues"
