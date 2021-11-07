@@ -8,6 +8,14 @@
     "dist",
     "!dist/**/*.js.map"
   ],
+  "homepage": "https://github.com/crashmax-dev/ts-esm#readme",
+  "bugs": {
+    "url": "https://github.com/crashmax-dev/ts-esm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashmax-dev/ts-esm.git"
+  },
   "scripts": {
     "start": "npm run build && node ./dist/index.js",
     "dev": "tsc-watch --onSuccess \"node -r tsconfig-paths/register --inspect ./dist/index.js\"",
