@@ -6,6 +6,6 @@
   },
   "ignorePatterns": [
     "dist",
-    "tests"
+    "test"
   ]
 }
