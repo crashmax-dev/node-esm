@@ -1,6 +1,7 @@
 {
-  "name": "typescript-template",
+  "name": "ts-esm",
   "version": "1.0.0",
+  "description": "ts-esm template",
   "type": "module",
   "exports": "./dist/index.js",
   "types": "dist",
@@ -8,6 +9,7 @@
     "dist",
     "!dist/**/*.js.map"
   ],
+  "keywords": [],
   "homepage": "https://github.com/crashmax-dev/ts-esm#readme",
   "bugs": {
     "url": "https://github.com/crashmax-dev/ts-esm/issues"
