@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "npm run build && node ./dist/index.js",
-    "dev": "tsc-watch --onSuccess \"node --experimental-import-meta-resolve -r tsconfig-paths/register --inspect ./dist/index.js\"",
+    "dev": "tsc-watch --onSuccess \"node -r tsconfig-paths/register --inspect ./dist/index.js\"",
     "build": "tsc",
     "test": "ava",
     "lint": "eslint --ext ts src",
