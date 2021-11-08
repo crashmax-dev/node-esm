@@ -5,7 +5,6 @@
     "browser": true
   },
   "ignorePatterns": [
-    "dist",
-    "test"
+    "dist"
   ]
 }

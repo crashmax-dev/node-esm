@@ -20,12 +20,12 @@
     "url": "git+https://github.com/crashmax-dev/ts-esm.git"
   },
   "scripts": {
-    "start": "npm run build && node ./dist/index.js",
-    "dev": "tsc-watch --onSuccess \"node -r tsconfig-paths/register --inspect ./dist/index.js\"",
-    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsc-watch --compiler typescript/bin/tsc -p tsconfig.build.json --onSuccess \"node -r tsconfig-paths/register --inspect dist/index.js\"",
+    "build": "tsc -p tsconfig.build.json",
     "test": "ava",
-    "lint": "eslint --ext ts src",
-    "lint:fix": "eslint --fix --ext ts src",
+    "lint": "eslint --ext ts .",
+    "lint:fix": "eslint --fix --ext ts .",
     "prebuild": "del-cli dist",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
