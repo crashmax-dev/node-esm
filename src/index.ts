@@ -1,6 +1,3 @@
-import dotenv from 'dotenv'
-dotenv.config()
-
 export default class FooBar {
   #foo: string
   #bar: number
@@ -10,11 +7,7 @@ export default class FooBar {
     this.#bar = bar
   }
 
-  get str(): string {
+  get foobar(): string {
     return `${this.#foo} ${this.#bar}`
-  }
-
-  get env(): string | undefined {
-    return process.env['DOTENV_EXAMPLE']
   }
 }
