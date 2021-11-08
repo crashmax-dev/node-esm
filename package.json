@@ -31,7 +31,6 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@ava/typescript": "^2.0.0",
     "@crashmax/eslint-config": "^1.0.0",
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/node": "^16.11.6",
