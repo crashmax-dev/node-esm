@@ -24,6 +24,7 @@
     "dev": "tsc-watch --compiler typescript/bin/tsc -p tsconfig.build.json --onSuccess \"node -r tsconfig-paths/register --inspect dist/index.js\"",
     "build": "tsc -p tsconfig.build.json",
     "test": "ava",
+    "test:watch": "ava --watch",
     "lint": "eslint --ext ts .",
     "lint:fix": "eslint --fix --ext ts .",
     "prebuild": "del-cli dist",
