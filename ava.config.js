@@ -1,12 +1,7 @@
 export default {
   files: [
-    'test/**/*'
+    'test/**/*.test.ts'
   ],
-  verbose: true,
-  nonSemVerExperiments: {
-    nextGenConfig: true,
-    configurableModuleFormat: true
-  },
   extensions: {
     ts: 'module'
   },
