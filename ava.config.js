@@ -6,6 +6,7 @@ export default {
     ts: 'module'
   },
   nodeArguments: [
-    '--loader=ts-node/esm'
+    '--loader=ts-node/esm',
+    '--no-warnings'
   ]
 }
