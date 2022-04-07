@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 export default class FooBar {
   #foo: string
   #bar: number
