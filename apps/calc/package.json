@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "pnpm build && cross-env NODE_ENV=production node dist/index.js",
-    "dev": "tsc-watch --compiler typescript/bin/tsc -p tsconfig.json --onSuccess \"cross-env NODE_ENV=development node -r tsconfig-paths/register --inspect ./dist/index.js\"",
+    "dev": "tsx watch ./src/index.ts",
     "build": "tsc"
   },
   "dependencies": {

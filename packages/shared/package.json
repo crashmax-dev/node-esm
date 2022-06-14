@@ -7,6 +7,7 @@
     "./sum": "./dist/sum.js"
   },
   "scripts": {
-    "prepare": "rm -rf dist && tsc"
+    "dev": "tsx watch ./src/index.ts",
+    "build": "del-cli dist && tsc"
   }
 }

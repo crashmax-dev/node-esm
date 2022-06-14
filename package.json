@@ -22,7 +22,10 @@
     "url": "git+https://github.com/crashmax-dev/ts-esm.git"
   },
   "scripts": {
-    "dev:calc": "cd apps/calc && pnpm dev",
+    "dev:apps": "pnpm -r --parallel --filter=./apps/* run dev",
+    "build:apps": "pnpm -r --filter=./apps/* run build",
+    "dev:packages": "pnpm -r --parallel --filter=./packages/* run dev",
+    "build:packages": "pnpm -r --filter=./packages/* run build",
     "test": "ava",
     "test:watch": "ava --watch",
     "lint": "eslint --ext ts .",
@@ -39,8 +42,6 @@
     "cross-env": "^7.0.3",
     "del-cli": "^4.0.1",
     "husky": "^8.0.1",
-    "tsc-watch": "^5.0.3",
-    "tsconfig-paths": "^4.0.0",
     "tsx": "^3.4.2",
     "typescript": "^4.7.3"
   },
