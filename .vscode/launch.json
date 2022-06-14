@@ -7,13 +7,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Development",
-      "runtimeExecutable": "npm",
+      "name": "apps/calc",
+      "runtimeExecutable": "pnpm",
       "runtimeArgs": [
-        "run-script",
-        "dev"
+        "dev:calc"
       ],
-      "port": 9229,
       "skipFiles": [
         "<node_internals>/**"
       ],

@@ -1,6 +1,7 @@
 export default {
   files: [
-    'test/**/*.test.ts'
+    './packages/**/*.test.ts',
+    './apps/**/*.test.ts'
   ],
   extensions: {
     ts: 'module'
