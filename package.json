@@ -1,7 +1,7 @@
 {
-  "name": "ts-esm",
+  "name": "node-esm",
   "version": "1.0.0",
-  "description": "ts-esm",
+  "description": "node-esm",
   "type": "module",
   "scripts": {
     "dev:apps": "pnpm -r --parallel --filter=./apps/* run dev",

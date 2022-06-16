@@ -1,5 +1,5 @@
 {
-  "name": "@ts-esm/shared",
+  "name": "@node-esm/shared",
   "version": "1.0.0",
   "type": "module",
   "exports": {

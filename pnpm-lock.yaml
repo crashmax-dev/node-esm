@@ -26,9 +26,9 @@ importers:
 
   apps/calc:
     specifiers:
-      '@ts-esm/shared': workspace:^1.0.0
+      '@node-esm/shared': workspace:^1.0.0
     dependencies:
-      '@ts-esm/shared': link:../../packages/shared
+      '@node-esm/shared': link:../../packages/shared
 
   packages/shared:
     specifiers: {}
