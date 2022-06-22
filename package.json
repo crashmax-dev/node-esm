@@ -12,10 +12,13 @@
     "test:watch": "ava --watch",
     "lint": "eslint --ext ts .",
     "lint:fix": "eslint --fix --ext ts .",
+    "format": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
+    "format:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@crashmax/eslint-config": "^1.1.0",
+    "@crashmax/prettier-config": "^1.0.0",
     "@crashmax/tsconfig": "^1.0.1",
     "@types/node": "^17.0.45",
     "ava": "^4.3.0",
@@ -27,5 +30,7 @@
   },
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
-  }
+  },
+  "prettier": "@crashmax/prettier-config",
+  "packageManager": "pnpm@7.3.0"
 }

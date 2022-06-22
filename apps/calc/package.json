@@ -8,6 +8,6 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@node-esm/shared": "workspace:^1.0.0"
+    "@node-esm/shared": "workspace:*"
   }
 }

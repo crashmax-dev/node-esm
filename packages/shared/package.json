@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "tsx watch ./src/index.ts",
-    "build": "del-cli dist && tsc"
+    "build": "del-cli dist && tsc",
+    "prepare": "pnpm build"
   }
 }
