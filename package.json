@@ -10,22 +10,18 @@
     "build:packages": "pnpm -r --filter=./packages/* run build",
     "test": "ava",
     "test:watch": "ava --watch",
-    "lint": "eslint --ext ts .",
-    "lint:fix": "eslint --fix --ext ts .",
-    "format": "prettier --check --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
-    "format:fix": "prettier --write --ignore-unknown '**/*.{ts,tsx,js,jsx}'",
+    "format": "prettier --write --ignore-unknown **",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@crashmax/eslint-config": "^1.1.0",
-    "@crashmax/prettier-config": "^1.1.1",
-    "@crashmax/tsconfig": "^1.0.1",
-    "@types/node": "^18.0.5",
-    "ava": "^4.3.1",
-    "del-cli": "^4.0.1",
+    "@crashmax/prettier-config": "^2.0.4",
+    "@crashmax/tsconfig": "^1.0.2",
+    "@types/node": "^18.11.0",
+    "ava": "^4.3.3",
+    "del-cli": "^5.0.0",
     "husky": "^8.0.1",
-    "tsx": "^3.8.0",
-    "typescript": "^4.7.4"
+    "tsx": "^3.10.3",
+    "typescript": "^4.8.4"
   },
   "packageManager": "pnpm@7.5.0",
   "engines": {
