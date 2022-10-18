@@ -7,7 +7,8 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "prisma generate && tsc",
+    "dev": "tsc --watch",
+    "build": "prisma generate && del-cli dist && tsc",
     "migrate": "prisma migrate dev",
     "push": "prisma db push",
     "seed": "prisma db seed",

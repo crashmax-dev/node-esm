@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
-    "./sum": "./dist/sum.js"
+    "./*": "./dist/*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ]
+    }
   },
   "scripts": {
-    "dev": "tsx watch ./src/index.ts",
+    "dev": "tsc --watch",
     "build": "del-cli dist && tsc",
     "prepare": "pnpm build"
   }
